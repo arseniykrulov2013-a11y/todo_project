@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Крутой ToDo-лист!</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body  style="background-color: rgb(225, 225, 225);">
+    <header>
+        <nav class="navbar navbar-expand-lg custom-card container-fluid">
+            <div class="container-fluid">
+                <h1>ToDo-лист!</h1>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <form class="form adding-card" action="/add_item" method="post">
+        <h1 class="margin-for-adding">Добавить дело</h1>
+        <input class="form__input" type="text" name="text" placeholder="Запиши что надо добавить">
+        <button class="add-button" type="submit">Добавить</button>
+    </form>
+    <br>
+    <br>
+    <ul class="dislay-flex">
+        {% for item in data %}
+        <li class="todo_item justify-content-center">
+            <div class="todo-card">
+                <h4 class="text margin-for-adding"> {{ item.name }} </h4>
+                <div class="donediv">
+                    <a href="/didit/{{ loop.index0 }} " class="margin-for-adding donelink"><h6>Выполнить</h6></a>
+                </div>
+                <br>
+            </div>
+        </li>
+        <br>
+        {% endfor %}
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+.add-button{
+    font-size: 25px;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #f0d23c;
+    padding: 3px;
+    border: #e2c73f 4px solid;
+}
+
+h2{
+    font-size: 35px;
+    margin: 0;
+}
+
+.donediv {
+    background-color: #FFDE40;
+    border-radius: 10px;
+    padding: 3px;
+    border: #e2c73f 4px solid;
+    width: 114px;
+    margin: 0;
+    margin: 0 auto;
+}
+
+.donelink {
+    text-decoration: none;
+    color: black;
+}
+
+.donelink:hover {
+    color: black !important;
+}
+
+.margin-for-adding{
+    margin-top: 17px;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 325px;
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: #f0d23c;
+    padding: 3px;
+    border: #e2c73f 4px solid;
+}
+
+input::placeholder{
+    color: black !important;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.form{
+    text-align: center;
+}
+
+.custom-card{
+    background-color: #FFDE40;
+    font-size: 100px;
+    text-align: center;
+    border-bottom: #e2c73f 4px solid;
+    margin: 0;
+    margin: 0 auto;
+}
+
+.adding-card{
+    background-color: #FFDE40;
+    font-size: 100px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: #e2c73f 4px solid;
+}
+
+.form__input{
+    font-size: 25px;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.todo-card{
+    background-color: #b8b8b8;
+    min-width: 500px;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: none;
+    border: #a7a7a7 4px solid;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+    list-style: none;
+    flex-direction: column
+}
+
+* {
+    padding: 0;
+}
